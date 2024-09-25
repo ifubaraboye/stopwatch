@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Stopwatch</title>
+</head>
+<body class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+    <h1 class="stopwatch text-center mt-6 text-[70px] font-semibold font-mono text-white">STOPWATCH</h1>
+
+    <div class="stopcontainer grid justify-center text-center ">
+        <div id="display" class="text-[70px] border-cyan-500 bg-cyan-500 rounded-2xl text-white p-6 px-11 font-bold font-mono">
+            00:00:00:00
+        </div>
+        <div id="controls" class="grid grid-cols-3 mt-6 pl-10 font-semibold text-white">
+            <button id="stopbtn" onclick="stop()" class="border-none bg-gray-400 hover:bg-cyan-500 w-[100px] rounded-md h-[50px]">STOP</button>
+            <button id="startbtn" onclick="start()" class="border-none bg-gray-400 hover:bg-cyan-500 w-[100px] rounded-md h-[50px]">START</button>
+            <button id="resetbtn" onclick="reset()" class="border-none bg-gray-400 hover:bg-cyan-500 w-[100px] rounded-md h-[50px]">RESET</button>
+        </div>
+    </div>
+
+
+
+    <script src="stopwatch.js"></script>
+</body>
+</html>
